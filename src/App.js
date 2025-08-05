@@ -1,21 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from '/Header';
+import UserCard from './UserCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>hello I'm simrah, its my first react app</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <UserCard name="Simrah Tariq" role="volunteer" />
+      <UserCard name="Sarah" role="React Developer" />
     </div>
   );
 }
